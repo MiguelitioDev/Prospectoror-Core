@@ -5,9 +5,10 @@ import re
 import sqlite3
 import sys
 import time
+import requests
 from tqdm import tqdm
 
-from prospector import config, historico, ibge, osm, planilha, pontuacao, sites
+from prospector import cnpj, config, historico, ibge, osm, planilha, pontuacao, sites
 from prospector.modelos import Municipio
 from prospector.planilha import gerar_planilha
 
@@ -306,6 +307,39 @@ def _executar_buscar(
         conn.close()
 
 
+def _executar_cnpj(args: argparse.Namespace, pasta_dados: Path) -> int:
+    """Baixa os arquivos da Receita e reconstrói o banco local dados/cnpj.db."""
+    print("Vai baixar ~5,5 GB e levar de 30 a 90 minutos.")
+    try:
+        mes = str(args.mes).strip() if getattr(args, "mes", None) else cnpj.mes_mais_recente()
+        muns = ibge.listar_municipios(["todos"], pasta_dados / "ibge")
+        pasta_zips = pasta_dados / "receita" / mes
+        arquivos = cnpj.baixar(mes, pasta_zips)
+    except (requests.RequestException, RuntimeError) as e:
+        print(f"Erro ao baixar dados da Receita/IBGE: {e}")
+        return 1
+
+    zip_muns = next((p for p in arquivos if p.name.lower() == "municipios.zip"), pasta_zips / "Municipios.zip")
+    zips_estabs = [p for p in arquivos if p.name.lower() != "municipios.zip"]
+
+    mapa = cnpj.mapa_municipios(zip_muns, muns)
+    total = cnpj.construir_base(zips_estabs, pasta_dados / "cnpj.db", mapa)
+
+    if not getattr(args, "manter_zips", False):
+        for arq in arquivos:
+            try:
+                Path(arq).unlink(missing_ok=True)
+            except OSError:
+                pass
+        try:
+            pasta_zips.rmdir()
+        except OSError:
+            pass
+
+    print(f"Base CNPJ pronta: {total} estabelecimentos gravados.")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     """Ponto de entrada da CLI do Prospector."""
     parser = _criar_parser()
@@ -313,12 +347,11 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv_norm)
 
     comando = args.comando or "buscar"
-    if comando == "cnpj":
-        print("Disponível após a Tarefa 8.")
-        return 1
-
     pasta_dados = Path(args.dados if getattr(args, "dados", None) else config.PASTA_DADOS)
     pasta_saida = Path(getattr(args, "saida", None) or config.PASTA_SAIDA)
+
+    if comando == "cnpj":
+        return _executar_cnpj(args, pasta_dados)
 
     if comando == "sincronizar":
         agora_iso = datetime.now().isoformat(timespec="seconds")

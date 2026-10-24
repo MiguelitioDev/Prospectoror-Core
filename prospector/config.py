@@ -165,4 +165,28 @@ LIMITE_SEM_CONTATO = 100
 PASTA_SAIDA = "."
 PASTA_DADOS = "dados"
 
+RECEITA_WEBDAV = "https://arquivos.receitafederal.gov.br/public.php/webdav/"
+RECEITA_TOKEN = "YggdBLfdninEJX9"
+
+CNAE_TIPOS = {
+    "5510801": "Pousada/Hotel",
+    "5510802": "Pousada/Hotel",
+    "5590601": "Pousada/Hotel",
+    "5590603": "Pousada/Hotel",
+    "5590699": "Pousada/Hotel",
+    "5611201": "Restaurante",
+    "5611203": "Bar/Café",
+    "5611204": "Bar/Café",
+    "5611205": "Bar/Café",
+    "7911200": "Agência/Passeio",
+    "7912100": "Agência/Passeio",
+    "7990200": "Agência/Passeio",
+    "8591100": "Kitesurf/Esporte",
+    "7721700": "Kitesurf/Esporte",
+    "4781400": "Loja de roupa",
+}
+
+REGEX_KITESURF = r"kite|surf|wind|sup\b|vela"
+
+
 

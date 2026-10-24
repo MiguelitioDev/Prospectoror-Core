@@ -46,6 +46,13 @@ Se você preencheu o andamento das vendas na planilha e quer apenas salvar no ba
 python buscar_leads.py sincronizar
 ```
 
+### Base aberta de CNPJ da Receita (opcional)
+Baixa os dados públicos mensais da Receita Federal (~5,5 GB, leva de 30 a 90 minutos) e monta o banco local `dados/cnpj.db` com os estabelecimentos ativos dos nichos atendidos:
+```powershell
+python buscar_leads.py cnpj
+python buscar_leads.py cnpj --mes 2026-10 --manter-zips
+```
+
 ---
 
 ## 3. Como funciona o "Não repetir leads" e a Fila
