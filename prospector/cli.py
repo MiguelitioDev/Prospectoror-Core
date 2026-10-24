@@ -8,7 +8,7 @@ import time
 import requests
 from tqdm import tqdm
 
-from prospector import cnpj, config, historico, ibge, osm, planilha, pontuacao, sites
+from prospector import app_json, cnpj, config, historico, ibge, osm, planilha, pontuacao, sites
 from prospector.modelos import Municipio
 from prospector.planilha import gerar_planilha
 
@@ -49,6 +49,11 @@ def _criar_parser() -> argparse.ArgumentParser:
     )
     p_buscar.add_argument("--tipos", nargs="+", default=None, help="Filtra tipos de negócio.")
     p_buscar.add_argument("--saida", default=None, help="Pasta onde ler/salvar planilhas.")
+    p_buscar.add_argument(
+        "--json",
+        default=None,
+        help="Também acrescenta os leads exportados neste arquivo JSON (usado pelo app de celular).",
+    )
     p_buscar.add_argument("--dados", default=None, help=argparse.SUPPRESS)
 
     p_sinc = sub.add_parser("sincronizar", help="Lê planilhas da pasta e atualiza status no banco.")
@@ -280,6 +285,15 @@ def _executar_buscar(
         # Passo 6: Nada a exportar
         if not abordar and not pesquisar:
             print("Nenhum lead novo para exportar.")
+            if args.json:
+                app_json.registrar_rodada_vazia(
+                    Path(args.json),
+                    {"Data": agora_iso, "Municípios varridos": varridos, "Falharam": falharam,
+                     "Faltam varrer": faltam, "Leads novos": novos_total,
+                     "Exportados (Abordar)": 0, "Exportados (Pesquisar contato)": 0,
+                     "Fila restante": len(pend)},
+                    agora_iso,
+                )
             return 0
 
         # Passo 7: Registrar rodada, salvar planilha e só depois marcar exportados
@@ -301,6 +315,8 @@ def _executar_buscar(
 
         rodada_id = historico.nova_rodada(conn, caminho_alvo.name, info_rodada, agora_iso)
         caminho_salvo = gerar_planilha(abordar, pesquisar, info_rodada, caminho_alvo)
+        if args.json:
+            app_json.acrescentar(Path(args.json), abordar, pesquisar, info_rodada, agora_iso)
         historico.marcar_exportados(conn, ids_exportados, rodada_id, datetime.now().isoformat(timespec="seconds"))
 
         # Passo 8: Resumo no terminal

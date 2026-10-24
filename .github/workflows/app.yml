@@ -1,0 +1,50 @@
+name: Publicar app
+
+# Republica o app de celular quando os arquivos da pasta app/ mudam,
+# usando os leads já guardados no ramo "dados" (sem fazer nova busca).
+
+on:
+  push:
+    branches: [main]
+    paths: ["app/**", ".github/workflows/app.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: prospector
+  cancel-in-progress: false
+
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Montar o app com os leads atuais
+        run: |
+          mkdir -p _site
+          cp -r app/. _site/
+          if git ls-remote --exit-code --heads origin dados > /dev/null; then
+            git fetch --depth 1 origin dados:refs/remotes/origin/dados
+            git show origin/dados:leads.json > _site/leads.json 2>/dev/null || true
+          fi
+          [ -s _site/leads.json ] || echo '{"versao":1,"atualizado":"","rodadas":[],"leads":[]}' > _site/leads.json
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  publicar:
+    needs: montar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deploy
+        uses: actions/deploy-pages@v4

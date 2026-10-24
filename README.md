@@ -102,3 +102,50 @@ Na aba **Abordar**, você tem três colunas para preencher durante o seu trabalh
 Sempre que você rodar uma nova busca (ou `python buscar_leads.py sincronizar`), o programa lê automaticamente suas planilhas salvas na pasta e guarda essas informações no banco.
 
 > **Importante:** Marcar um lead como **`Sem interesse`** ou **`Não contatar`** bloqueia essa empresa permanentemente no banco de dados para que ela nunca mais volte.
+
+---
+
+## 6. App no celular (GitHub Actions + GitHub Pages)
+
+O Prospector também roda sozinho no GitHub e publica um app que você instala no celular.
+Tudo é gratuito para repositório público.
+
+### Como funciona
+
+- **Busca automática:** o workflow `Buscar leads` roda toda segunda às 06:17 (horário de Fortaleza)
+  e sempre que você pedir. Ele usa o mesmo `buscar_leads.py`, com histórico, fila e "não repetir".
+- **Histórico:** o banco `prospector.db` fica guardado no ramo `dados` do repositório
+  (o ramo é criado sozinho na primeira execução).
+- **App:** a pasta `app/` é publicada no GitHub Pages junto com o `leads.json` gerado na busca.
+  O endereço fica `https://SEU-USUARIO.github.io/prospectoror-core/`.
+- **Seu andamento** (status, valor fechado, nota do Google e observações) fica salvo no celular.
+  Use **Mais → Salvar backup** de vez em quando.
+- A base da Receita (`cnpj`) não roda no GitHub (5,5 GB). As buscas lá usam só o OpenStreetMap.
+
+### Ativar (uma vez)
+
+1. Envie estes arquivos para o GitHub (commit + push no ramo `main`).
+2. No GitHub, abra **Settings → Pages** e, em *Build and deployment → Source*, escolha **GitHub Actions**.
+3. Em **Settings → Actions → General → Workflow permissions**, marque **Read and write permissions** e salve.
+4. Opcional, para não receber de novo os leads que você já tem no PC: copie `dados/prospector.db`
+   para uma pasta `semente/` na raiz do projeto e faça commit **antes** da primeira busca.
+   Atenção: o repositório é público, então esse arquivo (com suas anotações das planilhas) fica visível.
+5. Abra **Actions → Buscar leads → Run workflow** e confirme. A primeira rodada leva de 10 a 60 minutos.
+6. Quando terminar, abra o endereço do app no celular e instale:
+   - **Android (Chrome):** menu ⋮ → *Adicionar à tela inicial* / *Instalar app*.
+   - **iPhone (Safari):** Compartilhar → *Adicionar à Tela de Início*.
+
+### Buscar outras regiões pelo celular
+
+No app, toque em **Mais → Buscar agora no GitHub**, depois em **Run workflow**. Dá para escolher:
+- **uf:** `CE RN` ou `todos`
+- **cidades:** `Gramado/RS, Canela/RS` (se preenchido, ignora a UF)
+- **max_municipios** e **limite**
+- **tipos:** `Pousada/Hotel, Restaurante`
+
+### Gerar o JSON no PC
+
+O mesmo arquivo do app pode ser gerado localmente:
+```powershell
+python buscar_leads.py buscar --uf CE --json leads.json
+```

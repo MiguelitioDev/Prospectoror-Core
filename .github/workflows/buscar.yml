@@ -1,0 +1,146 @@
+name: Buscar leads
+
+# Roda o Prospector no GitHub, guarda o histórico no ramo "dados"
+# e publica o app de celular (GitHub Pages) com os leads atualizados.
+
+on:
+  schedule:
+    - cron: "17 9 * * 1"   # toda segunda às 06:17 (horário de Fortaleza)
+  workflow_dispatch:
+    inputs:
+      uf:
+        description: "Estados (ex.: CE RN) ou 'todos'. Ignorado se preencher cidades."
+        default: "CE"
+      cidades:
+        description: "Cidades separadas por vírgula (ex.: Gramado/RS, Canela/RS). Vazio = usa os estados."
+        default: ""
+      max_municipios:
+        description: "Máximo de municípios varridos nesta rodada"
+        default: "40"
+      limite:
+        description: "Máximo de leads novos que entram no app"
+        default: "300"
+      tipos:
+        description: "Tipos separados por vírgula (ex.: Pousada/Hotel, Restaurante). Vazio = todos."
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: prospector
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Baixar histórico (ramo dados)
+        run: |
+          if git ls-remote --exit-code --heads origin dados > /dev/null; then
+            git fetch --depth 1 origin dados:refs/remotes/origin/dados
+            git worktree add -B dados estado origin/dados
+          else
+            echo "Primeira execução: criando o ramo dados."
+            git worktree add --detach estado
+            git -C estado checkout --orphan dados
+            git -C estado rm -rfq .
+          fi
+          mkdir -p dados saida
+          if [ -d estado/dados ]; then
+            cp -r estado/dados/. dados/
+          elif [ -f semente/prospector.db ]; then
+            echo "Usando o histórico do PC (semente/prospector.db) na primeira execução."
+            cp semente/prospector.db dados/
+          fi
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: python -m pip install -r requirements.txt
+
+      - name: Buscar leads
+        env:
+          UF: ${{ inputs.uf || 'CE' }}
+          CIDADES: ${{ inputs.cidades || '' }}
+          MAX_MUN: ${{ inputs.max_municipios || '40' }}
+          LIMITE: ${{ inputs.limite || '300' }}
+          TIPOS: ${{ inputs.tipos || '' }}
+        run: |
+          args=(buscar --max-municipios "$MAX_MUN" --limite "$LIMITE" --saida saida --json estado/leads.json)
+
+          lista_virgula() {
+            local item
+            IFS=',' read -ra itens <<< "$1"
+            for item in "${itens[@]}"; do
+              item="${item#"${item%%[![:space:]]*}"}"
+              item="${item%"${item##*[![:space:]]}"}"
+              [ -n "$item" ] && printf '%s\n' "$item"
+            done
+          }
+
+          if [ -n "$CIDADES" ]; then
+            mapfile -t cidades < <(lista_virgula "$CIDADES")
+            args+=(--cidade "${cidades[@]}")
+          else
+            read -ra ufs <<< "$UF"
+            args+=(--uf "${ufs[@]}")
+          fi
+          if [ -n "$TIPOS" ]; then
+            mapfile -t tipos < <(lista_virgula "$TIPOS")
+            args+=(--tipos "${tipos[@]}")
+          fi
+
+          echo "Comando: python buscar_leads.py ${args[*]}"
+          python buscar_leads.py "${args[@]}"
+
+      - name: Guardar histórico no ramo dados
+        if: ${{ !cancelled() }}
+        run: |
+          rm -rf estado/dados
+          mkdir -p estado/dados
+          [ -f dados/prospector.db ] && cp dados/prospector.db estado/dados/
+          [ -d dados/ibge ] && cp -r dados/ibge estado/dados/
+          [ -f estado/leads.json ] || echo '{"versao":1,"atualizado":"","rodadas":[],"leads":[]}' > estado/leads.json
+          cd estado
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nada novo para guardar."
+          else
+            git commit -qm "Rodada de $(TZ=America/Fortaleza date '+%d/%m/%Y %H:%M')"
+            git push origin dados
+          fi
+
+      - name: Montar o app
+        if: ${{ !cancelled() }}
+        run: |
+          mkdir -p _site
+          cp -r app/. _site/
+          cp estado/leads.json _site/leads.json
+
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ !cancelled() }}
+        with:
+          path: _site
+
+  publicar:
+    needs: buscar
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deploy
+        uses: actions/deploy-pages@v4
