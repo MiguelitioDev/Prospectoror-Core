@@ -1,4 +1,4 @@
-from prospector.pontuacao import calcular_chance, calcular_preco
+from prospector.pontuacao import calcular_chance, calcular_preco, pontuar
 
 
 def test_chance_pousada_completa():
@@ -29,3 +29,17 @@ def test_preco_hotel_4_estrelas_fora_do_ar():
 
 def test_preco_cafe_com_site_respeita_minimo():
     assert calcular_preco({"amenity": "cafe"}, "Bar/Café", "Tem site") == (1150, 800, 800)
+
+
+def test_pontuar_mantem_colunas_e_acrescenta_novas(fazer_lead):
+    linha = pontuar(fazer_lead(whatsapp="https://wa.me/5585999998888", telefone="+5585999998888"))
+    chaves = [k for k in linha if not k.startswith("_")]
+    assert chaves[:8] == ["Chance de venda", "Prioridade", "Nome", "Tipo", "Cidade", "UF", "Preparar", "Protótipo"]
+    assert chaves[-4:] == ["Fonte", "CNPJ", "Aberta em", "ID"]
+    assert linha["Abrir conversa"].startswith("https://wa.me/5585999998888?text=Ol%C3%A1")
+
+
+def test_pontuar_nao_conferido():
+    nota, motivos = calcular_chance({}, "Restaurante", "Não conferido", "+558532221111", "", "", "", "Mensagem")
+    assert "site não conferido (procure no Google)" in motivos
+

@@ -531,8 +531,8 @@ def test_planilha_ida_e_volta(tmp_path, linhas_exemplo):
     # usuário preenche, apaga a coluna Observações e uma linha fica sem ID
     cab = [c.value for c in ws[1]]
     ws.cell(row=2, column=cab.index("Status contato") + 1, value="Fechado")
+    ws.cell(row=3, column=cab.index("ID") + 1).value = None
     ws.delete_cols(cab.index("Observações") + 1)
-    ws.cell(row=3, column=cab.index("ID") + 1, value=None)
     wb.save(caminho)
     lidas = ler_status(caminho)
     assert lidas[0]["Status contato"] == "Fechado" and "Observações" not in lidas[0]

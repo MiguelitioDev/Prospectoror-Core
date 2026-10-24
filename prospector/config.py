@@ -114,3 +114,47 @@ IBGE_CACHE_DIAS = 30
 
 STATUS_BLOQUEIO = {"Sem interesse", "Não contatar"}
 
+STATUS_CONTATO = [
+    "Mensagem enviada",
+    "Respondeu",
+    "Reunião marcada",
+    "Proposta enviada",
+    "Fechado",
+    "Sem interesse",
+    "Não contatar",
+]
+
+MENSAGEM_PADRAO = (
+    "Olá! Vi a {nome} aqui em {cidade} e preparei uma ideia de site para vocês, "
+    "com contato direto pelo WhatsApp. Posso te mostrar em 2 minutos?"
+)
+
+MENSAGENS = {
+    "Pousada/Hotel": (
+        "Olá! Vi a {nome} em {cidade} e montei um protótipo de site com fotos dos quartos "
+        "e reserva pelo WhatsApp. Posso te mandar o link para você ver?"
+    ),
+    "Agência/Passeio": (
+        "Olá! Vi a {nome} em {cidade} e preparei um protótipo de site com catálogo de passeios, "
+        "preços e agendamento pelo WhatsApp. Posso te mostrar?"
+    ),
+    "Kitesurf/Esporte": (
+        "Olá! Vi a {nome} em {cidade} e montei um protótipo de site com pacotes de aula "
+        "e agendamento pelo WhatsApp. Posso te enviar para dar uma olhada?"
+    ),
+    "Restaurante": (
+        "Olá! Vi o {nome} em {cidade} e preparei um protótipo de site com cardápio digital "
+        "e pedido/reserva pelo WhatsApp. Posso te mostrar em 2 minutos?"
+    ),
+    "Bar/Café": (
+        "Olá! Vi o {nome} em {cidade} e montei um protótipo de site com destaques do cardápio, "
+        "horários e botão de WhatsApp. Posso te mandar o link?"
+    ),
+    "Loja de roupa": (
+        "Olá! Vi a {nome} em {cidade} e preparei um protótipo de vitrine online com produtos "
+        "e compra direta pelo WhatsApp. Posso te mostrar como ficou?"
+    ),
+    "Outro": MENSAGEM_PADRAO,
+}
+
+

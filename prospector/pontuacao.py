@@ -1,4 +1,8 @@
+from datetime import date
 import math
+from urllib.parse import quote, quote_plus
+
+from prospector import config
 from prospector.config import (
     ANCORA,
     BASE_LAT,
@@ -9,6 +13,8 @@ from prospector.config import (
     LIMITE_FINAIS,
     LIMITE_LIGACAO_KM,
     LIMITE_PRESENCIAL_KM,
+    MENSAGEM_PADRAO,
+    MENSAGENS,
     NOTA_PROTOTIPO,
     NOTA_SITE_FINAL,
     PESO_TIPO,
@@ -16,6 +22,7 @@ from prospector.config import (
     PRECO_MINIMO_ABSOLUTO,
     SITES,
 )
+from prospector.modelos import Lead
 
 
 def distancia_km(lat, lng):
@@ -46,11 +53,12 @@ def calcular_chance(tags, tipo, status, telefone, whatsapp, email, redes, aborda
 
     # 1. Necessidade (até 40)
     necessidade = {"Sem site": 40, "Site fora do ar": 38,
-                   "Só rede social": 32, "Tem site": 5}[status]
+                   "Só rede social": 32, "Não conferido": 25, "Tem site": 5}[status]
     motivos.append({
         "Sem site": "não tem site",
         "Site fora do ar": "site antigo fora do ar (já pagou por site antes)",
         "Só rede social": "depende só de rede social",
+        "Não conferido": "site não conferido (procure no Google)",
         "Tem site": "já tem site (só cabe reformulação)",
     }[status])
 
@@ -196,3 +204,78 @@ def classificar(nota):
     if nota >= 50:
         return "Morno"
     return "Frio"
+
+
+def pontuar(lead: Lead, hoje: date | None = None) -> dict:
+    """Pontua um Lead e devolve o dicionário da linha da planilha."""
+    site = str(lead.site or "").strip()
+    status_bruto = str(lead.status_site or "").strip()
+    if status_bruto in ("A verificar", ""):
+        status = "Tem site" if site else "Sem site"
+    else:
+        status = status_bruto
+
+    try:
+        lat = float(lead.lat) if lead.lat is not None else BASE_LAT
+        lng = float(lead.lng) if lead.lng is not None else BASE_LNG
+    except (TypeError, ValueError):
+        lat, lng = BASE_LAT, BASE_LNG
+
+    km = distancia_km(lat, lng)
+    abordagem = faixa(km)
+    tags = lead.tags if isinstance(lead.tags, dict) else {}
+    tipo = str(lead.tipo or "Outro")
+    nome = str(lead.nome or "")
+    cidade = str(lead.cidade or "")
+    uf = str(lead.uf or "")
+    telefone = str(lead.telefone or "")
+    whatsapp = str(lead.whatsapp or "")
+    email = str(lead.email or "")
+    redes = str(lead.redes or "")
+
+    nota, motivos = calcular_chance(tags, tipo, status, telefone, whatsapp, email, redes, abordagem)
+    oferta, alvo, minimo = calcular_preco(tags, tipo, status)
+    proto, final = descrever_sites(tags, tipo, status)
+
+    molde_msg = config.MENSAGENS.get(tipo, config.MENSAGEM_PADRAO)
+    mensagem = molde_msg.format(nome=nome, cidade=cidade)
+    abrir_conversa = f"{whatsapp}?text={quote(mensagem, safe='')}" if whatsapp else ""
+    busca_maps = " ".join(p for p in (nome, cidade, uf) if p)
+
+    return {
+        "_proto": proto,
+        "_final": final,
+        "Chance de venda": nota,
+        "Prioridade": classificar(nota),
+        "Nome": nome,
+        "Tipo": tipo,
+        "Cidade": cidade,
+        "UF": uf,
+        "Preparar": "",
+        "Protótipo": "",
+        "Site final": "",
+        "Horas estimadas": 0,
+        "Oferta inicial (R$)": oferta,
+        "Valor alvo (R$)": alvo,
+        "Mínimo (R$)": minimo,
+        "Por quê": "; ".join(motivos),
+        "Site": status,
+        "URL atual": site,
+        "Redes sociais": redes,
+        "Telefone": telefone,
+        "WhatsApp": whatsapp,
+        "Abrir conversa": abrir_conversa,
+        "E-mail": email,
+        "Distância (km)": round(km),
+        "Abordagem": abordagem,
+        "Ver no Google Maps": "https://www.google.com/maps/search/?api=1&query=" + quote_plus(busca_maps),
+        "Nota Google (conferir)": "",
+        "Status contato": "",
+        "Valor fechado (R$)": "",
+        "Observações": "",
+        "Fonte": str(lead.fonte or ""),
+        "CNPJ": str(lead.cnpj or ""),
+        "Aberta em": str(lead.abertura or ""),
+        "ID": str(lead.id or ""),
+    }
+
