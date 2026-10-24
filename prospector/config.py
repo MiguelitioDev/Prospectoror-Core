@@ -112,3 +112,5 @@ UFS = [
 ]
 IBGE_CACHE_DIAS = 30
 
+STATUS_BLOQUEIO = {"Sem interesse", "Não contatar"}
+

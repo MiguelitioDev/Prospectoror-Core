@@ -1,5 +1,16 @@
 import pytest
+from prospector import historico
 from prospector.modelos import Lead
+
+
+@pytest.fixture
+def conn(tmp_path):
+    """Abre um banco de histórico temporário para testes."""
+    conexao = historico.abrir(tmp_path / "prospector.db")
+    try:
+        yield conexao
+    finally:
+        conexao.close()
 
 
 @pytest.fixture
