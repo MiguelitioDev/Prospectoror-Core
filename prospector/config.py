@@ -94,8 +94,10 @@ SO_REDE_SOCIAL = ("instagram.com", "facebook.com", "linktr.ee", "wa.me",
 SERVIDORES = [
     "https://overpass-api.de/api/interpreter",
     "https://overpass.kumi.systems/api/interpreter",
+    "https://overpass.private.coffee/api/interpreter",
 ]
 HEADERS = {"User-Agent": "buscar-leads/1.0 (uso pessoal)"}
+ORGAO_PUBLICO = r"prefeitura|secretaria|governo|setur|municipal"
 
 STOPWORDS_NOME = {
     "pousada", "hotel", "hostel", "restaurante", "bar", "cafe",
