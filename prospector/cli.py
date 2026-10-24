@@ -178,7 +178,7 @@ def _proximo_caminho_saida(pasta_saida: Path, agora: datetime) -> Path:
 
 
 def _executar_buscar(
-     parser: argparse.ArgumentParser,
+    parser: argparse.ArgumentParser,
     args: argparse.Namespace,
     argv_usado: list[str],
     pasta_dados: Path,
@@ -230,7 +230,14 @@ def _executar_buscar(
                     falharam += 1
                     continue
 
-                # Tarefa 9: cnpj.cruzar
+                caminho_cnpj = pasta_dados / "cnpj.db"
+                if caminho_cnpj.exists():
+                    try:
+                        estabs = cnpj.estabs_do_municipio(caminho_cnpj, mun.ibge)
+                        leads_mun = cnpj.cruzar(leads_mun, estabs, mun)
+                    except Exception as e:
+                        print(f"  ! Erro ao ler base CNPJ em {mun.nome}/{mun.uf}: {e}")
+
                 instante = datetime.now().isoformat(timespec="seconds")
                 novos_total += historico.salvar_leads(conn, leads_mun, instante)
                 historico.marcar_varrido(conn, mun.ibge, "osm", instante)

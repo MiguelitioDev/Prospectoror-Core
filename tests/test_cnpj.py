@@ -5,6 +5,7 @@ import requests
 
 from prospector.cnpj import (
     construir_base,
+    cruzar,
     estabs_do_municipio,
     linha_para_estab,
     mapa_municipios,
@@ -81,9 +82,15 @@ def responder_propfind(monkeypatch, itens: list[str]) -> None:
 
 
 @pytest.fixture
-def muns() -> list[Municipio]:
+def mun_fortaleza() -> Municipio:
+    """Município de Fortaleza para testes de cruzamento."""
+    return Municipio(ibge="2304400", nome="Fortaleza", uf="CE", lat=-3.73, lng=-38.52, populacao=2574412)
+
+
+@pytest.fixture
+def muns(mun_fortaleza: Municipio) -> list[Municipio]:
     """Lista mínima de municípios do IBGE com Fortaleza/CE."""
-    return [Municipio(ibge="2304400", nome="Fortaleza", uf="CE", lat=-3.73, lng=-38.52, populacao=2574412)]
+    return [mun_fortaleza]
 
 
 @pytest.fixture
@@ -160,3 +167,36 @@ def test_construir_base_duas_vezes_substitui_sem_duplicar(zip_estabs, mapa, tmp_
 
 def test_estabs_do_municipio_banco_inexistente(tmp_path):
     assert estabs_do_municipio(tmp_path / "nao_existe.db", "2304400") == []
+
+
+def test_casa_por_nome(fazer_lead, fazer_estab, mun_fortaleza):
+    leads = cruzar([fazer_lead(id="osm:node/1", nome="Pousada Sol Nascente", telefone="")],
+                   [fazer_estab(nome="POUSADA SOL NASCENTE LTDA", telefone="+5585988776655")], mun_fortaleza)
+    assert len(leads) == 1
+    assert leads[0].fonte == "OSM+Receita" and leads[0].telefone == "+5585988776655"
+    assert leads[0].whatsapp == "https://wa.me/5585988776655"
+
+
+def test_nome_generico_nao_casa(fazer_lead, fazer_estab, mun_fortaleza):
+    leads = cruzar([fazer_lead(id="osm:node/1", nome="Restaurante", telefone="")],
+                   [fazer_estab(nome="RESTAURANTE DO ZE", telefone="+558532221111")], mun_fortaleza)
+    assert len(leads) == 2 and {l.fonte for l in leads} == {"OSM", "Receita"}
+
+
+def test_casa_por_telefone_mesmo_com_nome_diferente(fazer_lead, fazer_estab, mun_fortaleza):
+    leads = cruzar([fazer_lead(id="osm:node/1", nome="Sol Hostel", telefone="+558532221111")],
+                   [fazer_estab(nome="ABC HOSPEDAGEM", telefone="+558532221111")], mun_fortaleza)
+    assert len(leads) == 1 and leads[0].cnpj
+
+
+def test_nao_sobrescreve_contato_do_osm(fazer_lead, fazer_estab, mun_fortaleza):
+    l = cruzar([fazer_lead(nome="Pousada Sol Nascente", telefone="+5585999998888")],
+               [fazer_estab(nome="POUSADA SOL NASCENTE", telefone="+558532221111")], mun_fortaleza)[0]
+    assert l.telefone == "+5585999998888"
+
+
+def test_lead_so_da_receita(fazer_estab, mun_fortaleza):
+    l = cruzar([], [fazer_estab(cnpj="12345678000190", nome="CAFE DA PRACA")], mun_fortaleza)[0]
+    assert (l.id, l.fonte, l.nome, l.status_site) == ("cnpj:12345678000190", "Receita", "Cafe Da Praca", "Não conferido")
+    assert (l.lat, l.lng) == (mun_fortaleza.lat, mun_fortaleza.lng)
+

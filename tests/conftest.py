@@ -1,6 +1,6 @@
 import pytest
 from prospector import historico
-from prospector.modelos import Lead
+from prospector.modelos import Estab, Lead
 
 
 @pytest.fixture
@@ -31,4 +31,28 @@ def fazer_lead():
         }
         padroes.update(campos)
         return Lead(**padroes)
+    return _fazer
+
+
+@pytest.fixture
+def fazer_estab():
+    """Cria um Estab de teste com valores padrão coerentes com fazer_lead."""
+    def _fazer(**campos) -> Estab:
+        padroes = {
+            "cnpj": "12345678000190",
+            "nome": "POUSADA TESTE",
+            "cnae": "5510801",
+            "tipo": "Pousada/Hotel",
+            "municipio_ibge": "2304400",
+            "uf": "CE",
+            "logradouro": "RUA A 100",
+            "bairro": "CENTRO",
+            "cep": "60000000",
+            "telefone": "+5585999998888",
+            "telefone2": "",
+            "email": "contato@teste.com",
+            "abertura": "2026-01-10",
+        }
+        padroes.update(campos)
+        return Estab(**padroes)
     return _fazer

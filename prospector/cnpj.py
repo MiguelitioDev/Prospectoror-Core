@@ -1,16 +1,18 @@
 import csv
+import dataclasses
 from datetime import date
 import io
 from pathlib import Path
 import re
 import sqlite3
 import zipfile
+from rapidfuzz.fuzz import token_sort_ratio
 import requests
 from tqdm import tqdm
 
 from prospector import config
-from prospector.modelos import Estab, Municipio
-from prospector.texto import normalizar_nome, normalizar_telefone
+from prospector.modelos import Estab, Lead, Municipio
+from prospector.texto import link_whatsapp, normalizar_nome, normalizar_telefone, nucleo_nome
 
 # Alguns campos da Receita podem ser muito longos; aumenta o limite do csv.reader com segurança
 try:
@@ -327,3 +329,109 @@ def estabs_do_municipio(caminho_db: Path, ibge: str) -> list[Estab]:
         return []
     finally:
         conn.close()
+
+
+def _pontuar_par(lead: Lead, nucleo_lead: str, estab: Estab, nucleo_estab: str) -> float:
+    """Calcula a pontuação de casamento (0..100) entre um Lead OSM e um Estab da Receita."""
+    tel_lead = str(lead.telefone or "").strip()
+    if tel_lead and tel_lead in {str(estab.telefone or "").strip(), str(estab.telefone2 or "").strip()}:
+        return 100.0
+    if len(nucleo_lead) >= 4 and len(nucleo_estab) >= 4:
+        return float(token_sort_ratio(nucleo_lead, nucleo_estab))
+    return 0.0
+
+
+def _enriquecer_lead(lead: Lead, estab: Estab) -> Lead:
+    """Retorna cópia do Lead OSM enriquecida com contatos, CNPJ e abertura do Estab casado."""
+    tel_estab = str(estab.telefone or estab.telefone2 or "").strip()
+    telefone = str(lead.telefone or "").strip()
+    whatsapp = str(lead.whatsapp or "").strip()
+    if not telefone and tel_estab:
+        telefone = tel_estab
+        whatsapp = whatsapp or link_whatsapp(telefone)
+    elif telefone and not whatsapp:
+        whatsapp = link_whatsapp(telefone)
+
+    email = str(lead.email or "").strip() or str(estab.email or "").strip()
+    return dataclasses.replace(
+        lead,
+        fonte="OSM+Receita",
+        telefone=telefone,
+        whatsapp=whatsapp,
+        email=email,
+        cnpj=str(estab.cnpj or ""),
+        abertura=str(estab.abertura or ""),
+    )
+
+
+def _estab_para_lead(estab: Estab, mun: Municipio) -> Lead:
+    """Converte um Estab sem par no OSM num novo Lead de fonte 'Receita'."""
+    tel = str(estab.telefone or estab.telefone2 or "").strip()
+    logradouro = str(estab.logradouro or "").strip()
+    tags = {"addr:street": logradouro} if logradouro else {}
+    try:
+        lat = float(mun.lat) if mun and mun.lat is not None else 0.0
+        lng = float(mun.lng) if mun and mun.lng is not None else 0.0
+    except (TypeError, ValueError):
+        lat, lng = 0.0, 0.0
+
+    return Lead(
+        id=f"cnpj:{estab.cnpj}",
+        fonte="Receita",
+        nome=str(estab.nome or "").strip().title(),
+        tipo=str(estab.tipo or "Outro"),
+        municipio_ibge=str(mun.ibge if mun else estab.municipio_ibge or ""),
+        cidade=str(mun.nome if mun else ""),
+        uf=str(mun.uf if mun else estab.uf or ""),
+        lat=lat,
+        lng=lng,
+        tags=tags,
+        telefone=tel,
+        whatsapp=link_whatsapp(tel),
+        email=str(estab.email or "").strip(),
+        cnpj=str(estab.cnpj or ""),
+        abertura=str(estab.abertura or ""),
+        status_site="Não conferido",
+    )
+
+
+def cruzar(leads: list[Lead], estabs: list[Estab], mun: Municipio) -> list[Lead]:
+    """Cruza leads do OSM com estabelecimentos da Receita no município por atribuição gulosa."""
+    lista_leads = list(leads or [])
+    lista_estabs = list(estabs or [])
+    if not lista_estabs:
+        return list(lista_leads)
+
+    nucleos_leads = [nucleo_nome(l.nome) for l in lista_leads]
+    nucleos_estabs = [nucleo_nome(e.nome) for e in lista_estabs]
+
+    pares: list[tuple[float, int, int]] = []
+    for i, lead in enumerate(lista_leads):
+        n_lead = nucleos_leads[i]
+        for j, estab in enumerate(lista_estabs):
+            pontos = _pontuar_par(lead, n_lead, estab, nucleos_estabs[j])
+            if pontos >= 88.0:
+                pares.append((pontos, i, j))
+
+    pares.sort(key=lambda item: (-item[0], item[1], item[2]))
+
+    casamento_lead: dict[int, int] = {}
+    estabs_usados: set[int] = set()
+    for _, i, j in pares:
+        if i not in casamento_lead and j not in estabs_usados:
+            casamento_lead[i] = j
+            estabs_usados.add(j)
+
+    resultado: list[Lead] = []
+    for i, lead in enumerate(lista_leads):
+        if i in casamento_lead:
+            resultado.append(_enriquecer_lead(lead, lista_estabs[casamento_lead[i]]))
+        else:
+            resultado.append(lead)
+
+    for j, estab in enumerate(lista_estabs):
+        if j not in estabs_usados:
+            resultado.append(_estab_para_lead(estab, mun))
+
+    return resultado
+

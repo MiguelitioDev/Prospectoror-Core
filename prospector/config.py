@@ -188,5 +188,6 @@ CNAE_TIPOS = {
 
 REGEX_KITESURF = r"kite|surf|wind|sup\b|vela"
 
-
+MESES_EMPRESA_NOVA = 18
+BONUS_EMPRESA_NOVA = 8
 

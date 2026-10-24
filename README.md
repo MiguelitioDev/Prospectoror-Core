@@ -46,12 +46,17 @@ Se você preencheu o andamento das vendas na planilha e quer apenas salvar no ba
 python buscar_leads.py sincronizar
 ```
 
-### Base aberta de CNPJ da Receita (opcional)
-Baixa os dados públicos mensais da Receita Federal (~5,5 GB, leva de 30 a 90 minutos) e monta o banco local `dados/cnpj.db` com os estabelecimentos ativos dos nichos atendidos:
+### Base da Receita (opcional, recomendada)
+Recomenda-se rodar uma vez por mês para baixar os dados abertos de CNPJ da Receita Federal (~5,5 GB, leva de 30 a 90 minutos) e atualizar o banco local `dados/cnpj.db`:
 ```powershell
 python buscar_leads.py cnpj
 python buscar_leads.py cnpj --mes 2026-10 --manter-zips
 ```
+O que muda nas buscas quando `dados/cnpj.db` está presente:
+- **Mais telefones e e-mails:** empresas do mapa (OSM) que casam por telefone ou nome ganham o telefone, WhatsApp, e-mail, CNPJ e data de abertura da Receita (`Fonte: OSM+Receita`).
+- **Empresas que não estão no mapa:** estabelecimentos ativos dos nichos atendidos que só existem na Receita entram na fila (`Fonte: Receita`).
+- **Bônus de empresa nova:** empresas abertas há menos de 18 meses ganham pontos extras na chance de venda.
+- **Status do site:** leads que vêm só da Receita saem com **`Site: Não conferido`** (pois a Receita não informa URL de site).
 
 ---
 

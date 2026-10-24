@@ -1,4 +1,5 @@
 from pathlib import Path
+import sqlite3
 import openpyxl
 import pytest
 
@@ -280,3 +281,52 @@ def test_falha_ao_salvar_nao_marca_exportado(ambiente, monkeypatch):
 def test_planilha_ilegivel_nao_para_rodada(ambiente):
     (ambiente.saida / "leads_quebrada.xlsx").write_bytes(b"isto nao e um xlsx")
     assert main(["buscar", "--uf", "CE", "--saida", str(ambiente.saida)]) == 0
+
+
+def test_buscar_cruza_com_cnpj_db_quando_existe(ambiente, fazer_estab):
+    ambiente.dados.mkdir(parents=True, exist_ok=True)
+    estab = fazer_estab(
+        cnpj="99887766000155",
+        nome="CAFE EXCLUSIVO RECEITA",
+        tipo="Bar/Café",
+        municipio_ibge="2304400",
+        uf="CE",
+        telefone="+5585988887777",
+    )
+    conn_cnpj = sqlite3.connect(ambiente.dados / "cnpj.db")
+    try:
+        conn_cnpj.execute(
+            """
+            CREATE TABLE estab (
+                cnpj TEXT PRIMARY KEY, nome TEXT, cnae TEXT, tipo TEXT,
+                municipio_ibge TEXT, uf TEXT, logradouro TEXT, bairro TEXT,
+                cep TEXT, telefone TEXT, telefone2 TEXT, email TEXT, abertura TEXT
+            )
+            """
+        )
+        conn_cnpj.execute(
+            "INSERT INTO estab VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+            (
+                estab.cnpj, estab.nome, estab.cnae, estab.tipo, estab.municipio_ibge,
+                estab.uf, estab.logradouro, estab.bairro, estab.cep, estab.telefone,
+                estab.telefone2, estab.email, estab.abertura,
+            ),
+        )
+        conn_cnpj.commit()
+    finally:
+        conn_cnpj.close()
+
+    assert main(["buscar", "--uf", "CE", "--dados", str(ambiente.dados), "--saida", str(ambiente.saida)]) == 0
+    wb = openpyxl.load_workbook(ambiente.unica_planilha(), read_only=True, data_only=True)
+    try:
+        ws = wb["Abordar"]
+        linhas = list(ws.iter_rows(values_only=True))
+        cab = [str(c or "").strip() for c in linhas[0]]
+        idx_fonte = cab.index("Fonte")
+        idx_id = cab.index("ID")
+        fontes = {str(r[idx_id]): str(r[idx_fonte]) for r in linhas[1:] if r}
+    finally:
+        wb.close()
+
+    assert fontes.get("cnpj:99887766000155") == "Receita"
+

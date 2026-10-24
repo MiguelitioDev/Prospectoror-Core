@@ -13,8 +13,6 @@ from prospector.config import (
     LIMITE_FINAIS,
     LIMITE_LIGACAO_KM,
     LIMITE_PRESENCIAL_KM,
-    MENSAGEM_PADRAO,
-    MENSAGENS,
     NOTA_PROTOTIPO,
     NOTA_SITE_FINAL,
     PESO_TIPO,
@@ -47,7 +45,35 @@ def numero(valor):
         return 0
 
 
-def calcular_chance(tags, tipo, status, telefone, whatsapp, email, redes, abordagem):
+def _empresa_nova(abertura: str, hoje: date | None) -> bool:
+    """Verifica se a data de abertura está dentro de MESES_EMPRESA_NOVA em meses de calendário."""
+    texto = str(abertura or "").strip()
+    if not texto:
+        return False
+    try:
+        dt_abertura = date.fromisoformat(texto[:10])
+    except ValueError:
+        return False
+    ref = hoje if isinstance(hoje, date) else date.today()
+    if dt_abertura > ref:
+        return False
+    meses = (ref.year - dt_abertura.year) * 12 + (ref.month - dt_abertura.month)
+    return 0 <= meses <= config.MESES_EMPRESA_NOVA
+
+
+def calcular_chance(
+    tags,
+    tipo,
+    status,
+    telefone,
+    whatsapp,
+    email,
+    redes,
+    abordagem,
+    *,
+    abertura: str = "",
+    hoje: date | None = None,
+):
     """Devolve (nota 0-100, lista de motivos)."""
     motivos = []
 
@@ -106,6 +132,10 @@ def calcular_chance(tags, tipo, status, telefone, whatsapp, email, redes, aborda
         motivos.append("dá para visitar pessoalmente")
 
     nota = necessidade + contato + estrutura + pts_tipo + pts_dist
+
+    if _empresa_nova(abertura, hoje):
+        nota += config.BONUS_EMPRESA_NOVA
+        motivos.append(f"empresa nova (aberta há menos de {config.MESES_EMPRESA_NOVA} meses)")
 
     # Penalidades
     if tags.get("brand") or tags.get("brand:wikidata") or tags.get("operator:wikidata"):
@@ -233,7 +263,18 @@ def pontuar(lead: Lead, hoje: date | None = None) -> dict:
     email = str(lead.email or "")
     redes = str(lead.redes or "")
 
-    nota, motivos = calcular_chance(tags, tipo, status, telefone, whatsapp, email, redes, abordagem)
+    nota, motivos = calcular_chance(
+        tags,
+        tipo,
+        status,
+        telefone,
+        whatsapp,
+        email,
+        redes,
+        abordagem,
+        abertura=str(lead.abertura or ""),
+        hoje=hoje,
+    )
     oferta, alvo, minimo = calcular_preco(tags, tipo, status)
     proto, final = descrever_sites(tags, tipo, status)
 

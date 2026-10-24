@@ -1,3 +1,5 @@
+from datetime import date
+
 from prospector.pontuacao import calcular_chance, calcular_preco, pontuar
 
 
@@ -42,4 +44,22 @@ def test_pontuar_mantem_colunas_e_acrescenta_novas(fazer_lead):
 def test_pontuar_nao_conferido():
     nota, motivos = calcular_chance({}, "Restaurante", "Não conferido", "+558532221111", "", "", "", "Mensagem")
     assert "site não conferido (procure no Google)" in motivos
+
+
+def test_bonus_empresa_nova():
+    args = ({}, "Restaurante", "Sem site", "+558532221111", "", "", "", "Mensagem")
+    sem, _ = calcular_chance(*args)
+    com, motivos = calcular_chance(*args, abertura="2026-01-10", hoje=date(2026, 10, 24))
+    velha, _ = calcular_chance(*args, abertura="2020-01-10", hoje=date(2026, 10, 24))
+    assert com == sem + 8 and velha == sem
+    assert "empresa nova (aberta há menos de 18 meses)" in motivos
+
+
+def test_bonus_empresa_nova_datas_invalidas_ou_futuras():
+    args = ({}, "Restaurante", "Sem site", "+558532221111", "", "", "", "Mensagem")
+    sem, _ = calcular_chance(*args)
+    futura, _ = calcular_chance(*args, abertura="2027-01-01", hoje=date(2026, 10, 24))
+    invalida, _ = calcular_chance(*args, abertura="data-invalida", hoje=date(2026, 10, 24))
+    assert futura == sem and invalida == sem
+
 

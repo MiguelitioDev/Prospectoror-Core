@@ -2,7 +2,6 @@ import re
 import time
 import requests
 
-from prospector import config
 from prospector.config import HEADERS, ORGAO_PUBLICO, SERVIDORES, SO_REDE_SOCIAL, TIPOS
 from prospector.modelos import Lead, Municipio
 from prospector.texto import link_whatsapp, normalizar_telefone
