@@ -1,4 +1,33 @@
+# Dados gerados em tempo de execução (bancos, cache do IBGE, base de CNPJ)
 dados/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+leads.json
+
+# Planilhas de leads e arquivos temporários do Excel
 *.xlsx
+*.xls
+*.csv
+~$*
+
+# Python
 __pycache__/
+*.py[cod]
 .pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Segredos e ambiente local
+.env
+.env.*
+
+# Editor / ferramentas locais
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db

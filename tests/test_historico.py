@@ -34,6 +34,21 @@ def test_revarredura_nao_apaga_contato_nem_status_verificado(conn, fazer_lead):
     assert l.telefone == "+5585999998888" and l.status_site == "Site fora do ar"
 
 
+def test_revarredura_mantem_site_nao_confirmado(conn, fazer_lead):
+    salvar_leads(conn, [fazer_lead(id="osm:node/1", site="https://a.com", status_site="Não confirmado")], "t")
+    salvar_leads(conn, [fazer_lead(id="osm:node/1", site="https://a.com", status_site="A verificar")], "t2")
+    assert pendentes(conn)[0].status_site == "Não confirmado"
+
+
+def test_revarredura_mantem_site_descoberto_pelo_email(conn, fazer_lead):
+    # O OSM continua sem 'website'; o site descoberto pelo e-mail não pode se perder na revarredura.
+    salvar_leads(conn, [fazer_lead(id="osm:node/1", site="https://expressomanini.com.br",
+                                   status_site="Tem site")], "t")
+    salvar_leads(conn, [fazer_lead(id="osm:node/1", site="", status_site="Sem site")], "t2")
+    l = pendentes(conn)[0]
+    assert (l.site, l.status_site) == ("https://expressomanini.com.br", "Tem site")
+
+
 def test_bloqueio_por_status(conn, fazer_lead):
     salvar_leads(conn, [fazer_lead(id="osm:node/1")], "t")
     assert atualizar_status(conn, [{"ID": "osm:node/1", "Status contato": "Não contatar"},

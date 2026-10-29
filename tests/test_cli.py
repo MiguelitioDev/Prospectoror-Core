@@ -225,7 +225,7 @@ def ambiente(tmp_path, monkeypatch):
     monkeypatch.setattr(config, "PASTA_SAIDA", str(amb.saida))
     monkeypatch.setattr(ibge, "listar_municipios", lambda ufs, cache_dir: list(amb.municipios))
     monkeypatch.setattr(osm, "buscar_municipio", amb.buscar_osm)
-    monkeypatch.setattr(sites, "site_no_ar", lambda url: True)
+    monkeypatch.setattr(sites, "checar_site", lambda url: "Tem site")
     monkeypatch.setattr(cli.time, "sleep", lambda s: None)
     try:
         yield amb
@@ -330,3 +330,32 @@ def test_buscar_cruza_com_cnpj_db_quando_existe(ambiente, fazer_estab):
 
     assert fontes.get("cnpj:99887766000155") == "Receita"
 
+
+
+def test_reverificar_corrige_status_antigos_no_banco(ambiente, fazer_lead, monkeypatch, capsys):
+    conn = ambiente.conn()
+    historico.salvar_leads(conn, [
+        fazer_lead(id="a", site="https://viva.com.br", status_site="Site fora do ar"),
+        fazer_lead(id="b", site="https://morta.com.br", status_site="Site fora do ar"),
+        fazer_lead(id="c", site="https://bloqueia.com.br", status_site="Site fora do ar"),
+        fazer_lead(id="d", status_site="Sem site", email="x@empresa.com.br", tags={"email": "x@empresa.com.br"}),
+        fazer_lead(id="e", site="https://ok.com.br", status_site="Tem site"),
+    ], "t")
+    resultados = {"https://viva.com.br": "Tem site", "https://morta.com.br": "Site fora do ar",
+                  "https://bloqueia.com.br": "Não confirmado", "https://empresa.com.br": "Tem site"}
+    consultados = []
+
+    def fake(url):
+        consultados.append(url)
+        return resultados[url]
+
+    monkeypatch.setattr(sites, "checar_site", fake)
+    assert main(["reverificar", "--dados", str(ambiente.dados)]) == 0
+
+    por_id = {l.id: l for l in historico.pendentes(conn)}
+    assert por_id["a"].status_site == "Tem site"
+    assert por_id["b"].status_site == "Site fora do ar"
+    assert por_id["c"].status_site == "Não confirmado"
+    assert (por_id["d"].site, por_id["d"].status_site) == ("https://empresa.com.br", "Tem site")
+    assert "https://ok.com.br" not in consultados
+    capsys.readouterr().out.encode("cp1252")   # o console do Windows não aceita todos os símbolos

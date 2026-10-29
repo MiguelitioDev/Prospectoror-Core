@@ -46,6 +46,17 @@ def test_pontuar_nao_conferido():
     assert "site não conferido (procure no Google)" in motivos
 
 
+def test_pontuar_site_nao_confirmado(fazer_lead):
+    args = ({}, "Restaurante", "Não confirmado", "+558532221111", "", "", "", "Mensagem")
+    nota, motivos = calcular_chance(*args)
+    sem_site, _ = calcular_chance({}, "Restaurante", "Sem site", "+558532221111", "", "", "", "Mensagem")
+    assert "site não confirmado (conferir se abre antes de abordar)" in motivos
+    assert 5 < nota < sem_site
+    linha = pontuar(fazer_lead(site="https://x.com.br", status_site="Não confirmado",
+                               telefone="+558532221111"))
+    assert linha["Site"] == "Não confirmado"
+
+
 def test_bonus_empresa_nova():
     args = ({}, "Restaurante", "Sem site", "+558532221111", "", "", "", "Mensagem")
     sem, _ = calcular_chance(*args)

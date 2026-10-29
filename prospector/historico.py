@@ -67,9 +67,11 @@ def _mesclar_lead(antigo: Lead, novo: Lead) -> Lead:
     if (
         novo.status_site == "A verificar"
         and novo.site == antigo.site
-        and antigo.status_site in ("Tem site", "Site fora do ar")
+        and antigo.status_site in ("Tem site", "Site fora do ar", "Não confirmado")
     ):
         status_site = antigo.status_site
+    elif novo.status_site == "Sem site" and not novo.site and antigo.status_site == "Tem site" and antigo.site:
+        status_site = antigo.status_site   # site descoberto pelo e-mail; o OSM segue sem 'website'
     else:
         status_site = novo.status_site or antigo.status_site
 
@@ -177,6 +179,19 @@ def pendentes(conn: sqlite3.Connection) -> list[Lead]:
             if not isinstance(d, dict):
                 continue
             resultado.append(Lead.de_dict(d))
+        except Exception:
+            continue
+    return resultado
+
+
+def todos(conn: sqlite3.Connection) -> list[Lead]:
+    """Lista todos os leads do banco, exportados ou não."""
+    resultado = []
+    for (dados_txt,) in conn.execute("SELECT dados FROM leads ORDER BY id").fetchall():
+        try:
+            d = json.loads(dados_txt)
+            if isinstance(d, dict):
+                resultado.append(Lead.de_dict(d))
         except Exception:
             continue
     return resultado

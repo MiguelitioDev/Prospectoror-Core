@@ -46,6 +46,17 @@ Se você preencheu o andamento das vendas na planilha e quer apenas salvar no ba
 python buscar_leads.py sincronizar
 ```
 
+### Reverificar os sites já salvos
+Confere de novo, no banco inteiro, os leads marcados como **Site fora do ar** e procura o site de quem está **Sem site** mas tem e-mail de domínio próprio no mapa (ex.: `contato@empresa.com.br` → testa `empresa.com.br`):
+```powershell
+python buscar_leads.py reverificar
+```
+Como o status do site é decidido:
+- **Tem site:** o endereço abriu (testa https/http, com e sem `www`, e ignora certificado vencido).
+- **Site fora do ar:** o domínio não existe ou recusou conexão em todas as tentativas.
+- **Não confirmado:** o servidor respondeu com bloqueio/erro (403, 404, 503) ou ficou lento. Confira no navegador antes de abordar.
+- O e-mail só vale como pista do site quando vem do mapa (OSM); o da Receita costuma ser do contador.
+
 ### Base da Receita (opcional, recomendada)
 Recomenda-se rodar uma vez por mês para baixar os dados abertos de CNPJ da Receita Federal (~5,5 GB, leva de 30 a 90 minutos) e atualizar o banco local `dados/cnpj.db`:
 ```powershell

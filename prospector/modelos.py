@@ -32,7 +32,7 @@ class Lead:
     cnpj: str = ""             # 14 dígitos
     abertura: str = ""         # "AAAA-MM-DD"
     status_site: str = ""      # "Sem site" | "Só rede social" | "A verificar" | "Tem site"
-                               # | "Site fora do ar" | "Não conferido"
+                               # | "Site fora do ar" | "Não conferido" | "Não confirmado"
 
     def tem_contato(self) -> bool:
         """Verifica se o lead possui ao menos um canal de contato."""

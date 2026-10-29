@@ -1,4 +1,5 @@
 import argparse
+from collections import Counter
 from datetime import datetime, timedelta
 from pathlib import Path
 import re
@@ -12,7 +13,7 @@ from prospector import cnpj, config, historico, ibge, osm, planilha, pontuacao, 
 from prospector.modelos import Municipio
 from prospector.planilha import gerar_planilha
 
-_COMANDOS = ("buscar", "sincronizar", "cnpj")
+_COMANDOS = ("buscar", "sincronizar", "cnpj", "reverificar")
 
 
 def _criar_parser() -> argparse.ArgumentParser:
@@ -54,6 +55,12 @@ def _criar_parser() -> argparse.ArgumentParser:
     p_sinc = sub.add_parser("sincronizar", help="Lê planilhas da pasta e atualiza status no banco.")
     p_sinc.add_argument("--saida", default=None, help="Pasta onde estão as planilhas.")
     p_sinc.add_argument("--dados", default=None, help=argparse.SUPPRESS)
+
+    p_rev = sub.add_parser(
+        "reverificar",
+        help="Confere de novo os sites marcados 'fora do ar' e procura o site pelo e-mail de quem está 'Sem site'.",
+    )
+    p_rev.add_argument("--dados", default=None, help=argparse.SUPPRESS)
 
     p_cnpj = sub.add_parser("cnpj", help="Baixa e constrói a base local de CNPJ da Receita.")
     p_cnpj.add_argument("--mes", default=None, help="Mês AAAA-MM da Receita (padrão: mais recente).")
@@ -347,6 +354,28 @@ def _executar_cnpj(args: argparse.Namespace, pasta_dados: Path) -> int:
     return 0
 
 
+def _executar_reverificar(pasta_dados: Path) -> int:
+    """Refaz a checagem de sites de todo o banco e grava só o que mudou."""
+    conn = historico.abrir(pasta_dados / "prospector.db")
+    try:
+        leads = historico.todos(conn)
+        antes = {l.id: (l.status_site, l.site) for l in leads}
+        for lead in leads:
+            if lead.status_site == "Site fora do ar" and lead.site:
+                lead.status_site = "A verificar"
+        sites.verificar_sites(leads)
+
+        mudaram = [l for l in leads if (l.status_site, l.site) != antes[l.id]]
+        historico.salvar_leads(conn, mudaram, datetime.now().isoformat(timespec="seconds"))
+    finally:
+        conn.close()
+
+    novos = Counter(l.status_site for l in mudaram)
+    detalhe = ", ".join(f"{n} {s}" for s, n in sorted(novos.items())) or "nenhuma mudança"
+    print(f"Reverificação concluída: {len(mudaram)} leads atualizados ({detalhe}).")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     """Ponto de entrada da CLI do Prospector."""
     parser = _criar_parser()
@@ -359,6 +388,9 @@ def main(argv: list[str] | None = None) -> int:
 
     if comando == "cnpj":
         return _executar_cnpj(args, pasta_dados)
+
+    if comando == "reverificar":
+        return _executar_reverificar(pasta_dados)
 
     if comando == "sincronizar":
         agora_iso = datetime.now().isoformat(timespec="seconds")

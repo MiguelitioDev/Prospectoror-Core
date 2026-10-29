@@ -79,12 +79,14 @@ def calcular_chance(
 
     # 1. Necessidade (até 40)
     necessidade = {"Sem site": 40, "Site fora do ar": 38,
-                   "Só rede social": 32, "Não conferido": 25, "Tem site": 5}[status]
+                   "Só rede social": 32, "Não conferido": 25, "Não confirmado": 25,
+                   "Tem site": 5}[status]
     motivos.append({
         "Sem site": "não tem site",
         "Site fora do ar": "site antigo fora do ar (já pagou por site antes)",
         "Só rede social": "depende só de rede social",
         "Não conferido": "site não conferido (procure no Google)",
+        "Não confirmado": "site não confirmado (conferir se abre antes de abordar)",
         "Tem site": "já tem site (só cabe reformulação)",
     }[status])
 

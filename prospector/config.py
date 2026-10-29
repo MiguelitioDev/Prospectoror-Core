@@ -97,6 +97,22 @@ SERVIDORES = [
     "https://overpass.private.coffee/api/interpreter",
 ]
 HEADERS = {"User-Agent": "buscar-leads/1.0 (uso pessoal)"}
+# Sites bloqueiam robôs (403); para conferir se o site abre, parecemos um navegador.
+HEADERS_SITE = {
+    "User-Agent": ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"),
+    "Accept": "text/html,application/xhtml+xml,*/*;q=0.8",
+    "Accept-Language": "pt-BR,pt;q=0.9",
+}
+# Provedores de e-mail que não indicam o site da empresa
+EMAIL_GRATUITO = {
+    "gmail.com", "googlemail.com", "hotmail.com", "hotmail.com.br", "outlook.com",
+    "outlook.com.br", "live.com", "msn.com", "yahoo.com", "yahoo.com.br", "ymail.com",
+    "icloud.com", "me.com", "uol.com.br", "bol.com.br", "terra.com.br", "ig.com.br",
+    "globo.com", "globomail.com", "oi.com.br", "r7.com", "zipmail.com.br",
+    "protonmail.com", "proton.me", "aol.com", "gmx.com", "mail.com",
+    "qq.com", "163.com", "126.com", "sina.com",
+}
 ORGAO_PUBLICO = r"prefeitura|secretaria|governo|setur|municipal"
 
 STOPWORDS_NOME = {
