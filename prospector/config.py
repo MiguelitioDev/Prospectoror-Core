@@ -142,7 +142,7 @@ STATUS_CONTATO = [
 
 # Link do portfólio da MJ Studios (onde o cliente vê sites prontos e monta o orçamento).
 # Preencha aqui; enquanto estiver vazio, a frase do link não aparece na mensagem.
-LINK_PORTFOLIO = ""
+LINK_PORTFOLIO = "https://mj-studio-sandy.vercel.app/"
 
 MENSAGEM_PADRAO = (
     "Olá! Tudo bem? Vi a {nome} em {cidade} e percebi que um site profissional "
