@@ -281,7 +281,8 @@ def pontuar(lead: Lead, hoje: date | None = None) -> dict:
     proto, final = descrever_sites(tags, tipo, status)
 
     molde_msg = config.MENSAGENS.get(tipo, config.MENSAGEM_PADRAO)
-    mensagem = molde_msg.format(nome=nome, cidade=cidade)
+    link = config.TEXTO_LINK.format(url=config.LINK_PORTFOLIO) if config.LINK_PORTFOLIO else ""
+    mensagem = molde_msg.format(nome=nome, cidade=cidade, link=link)
     abrir_conversa = f"{whatsapp}?text={quote(mensagem, safe='')}" if whatsapp else ""
     busca_maps = " ".join(p for p in (nome, cidade, uf) if p)
 

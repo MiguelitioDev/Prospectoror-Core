@@ -140,38 +140,23 @@ STATUS_CONTATO = [
     "Não contatar",
 ]
 
+# Link do portfólio da MJ Studios (onde o cliente vê sites prontos e monta o orçamento).
+# Preencha aqui; enquanto estiver vazio, a frase do link não aparece na mensagem.
+LINK_PORTFOLIO = ""
+
 MENSAGEM_PADRAO = (
-    "Olá! Vi a {nome} aqui em {cidade} e preparei uma ideia de site para vocês, "
-    "com contato direto pelo WhatsApp. Posso te mostrar em 2 minutos?"
+    "Olá! Tudo bem? Vi a {nome} em {cidade} e percebi que um site profissional "
+    "ajudaria vocês a receber mais clientes e contatos pelo WhatsApp. "
+    "Sou o Miguel, da MJ Studios. {link}Posso te ajudar com isso?"
 )
 
-MENSAGENS = {
-    "Pousada/Hotel": (
-        "Olá! Vi a {nome} em {cidade} e montei um protótipo de site com fotos dos quartos "
-        "e reserva pelo WhatsApp. Posso te mandar o link para você ver?"
-    ),
-    "Agência/Passeio": (
-        "Olá! Vi a {nome} em {cidade} e preparei um protótipo de site com catálogo de passeios, "
-        "preços e agendamento pelo WhatsApp. Posso te mostrar?"
-    ),
-    "Kitesurf/Esporte": (
-        "Olá! Vi a {nome} em {cidade} e montei um protótipo de site com pacotes de aula "
-        "e agendamento pelo WhatsApp. Posso te enviar para dar uma olhada?"
-    ),
-    "Restaurante": (
-        "Olá! Vi o {nome} em {cidade} e preparei um protótipo de site com cardápio digital "
-        "e pedido/reserva pelo WhatsApp. Posso te mostrar em 2 minutos?"
-    ),
-    "Bar/Café": (
-        "Olá! Vi o {nome} em {cidade} e montei um protótipo de site com destaques do cardápio, "
-        "horários e botão de WhatsApp. Posso te mandar o link?"
-    ),
-    "Loja de roupa": (
-        "Olá! Vi a {nome} em {cidade} e preparei um protótipo de vitrine online com produtos "
-        "e compra direta pelo WhatsApp. Posso te mostrar como ficou?"
-    ),
-    "Outro": MENSAGEM_PADRAO,
-}
+TEXTO_LINK = (
+    "Aqui estão alguns sites que já fiz, e no próprio site você já pode montar "
+    "o seu orçamento: {url} "
+)
+
+# Mesma mensagem para todos os tipos de negócio
+MENSAGENS = {}
 
 UFS_PADRAO = ["CE"]
 MAX_MUNICIPIOS = 40
