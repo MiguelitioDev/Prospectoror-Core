@@ -145,9 +145,9 @@ STATUS_CONTATO = [
 LINK_PORTFOLIO = "https://mj-studio-sandy.vercel.app/"
 
 MENSAGEM_PADRAO = (
-    "Olá! Tudo bem? Vi a {nome} em {cidade} e percebi que um site profissional "
-    "ajudaria vocês a receber mais clientes e contatos pelo WhatsApp. "
-    "Sou o Miguel, da MJ Studios. {link}Posso te ajudar com isso?"
+    "Olá! Tudo bem? Sou o Miguel, da MJ Studios. Faço sites profissionais para "
+    "negócios, com contato direto pelo WhatsApp, para ajudar a receber mais clientes. "
+    "{link}Posso te ajudar com isso?"
 )
 
 TEXTO_LINK = (
