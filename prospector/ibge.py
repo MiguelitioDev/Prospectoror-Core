@@ -18,6 +18,22 @@ URL_POPULACAO = (
 )
 
 
+ARQUIVO_BASE = Path(__file__).with_name("municipios_base.json")
+_ibge_indisponivel = False  # vira True após a 1ª falha de rede, para não esperar timeout em cada UF
+
+
+def _municipios_base(uf: str) -> list[Municipio]:
+    """Lista de reserva (sem população) empacotada no repositório, usada se o IBGE não responder."""
+    try:
+        dados = json.loads(ARQUIVO_BASE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    return [
+        Municipio(ibge=str(i), nome=str(n), uf=uf, lat=float(la), lng=float(lo), populacao=0)
+        for i, n, la, lo in dados.get(uf, [])
+    ]
+
+
 def _expandir_ufs(ufs: list[str]) -> list[str]:
     """Expande 'todos' e valida cada sigla contra config.UFS."""
     if not ufs:
@@ -207,12 +223,28 @@ def listar_municipios(ufs: list[str], cache_dir: Path) -> list[Municipio]:
             resultado.extend(em_cache)
             continue
 
-        if ids_uf is None:
-            ids_uf = _buscar_estados()
+        global _ibge_indisponivel
+        if not _ibge_indisponivel:
+            try:
+                if ids_uf is None:
+                    ids_uf = _buscar_estados()
+                muns_uf = _baixar_uf(uf, ids_uf)
+                _salvar_cache(arquivo, muns_uf)
+                resultado.extend(muns_uf)
+                continue
+            except RuntimeError as exc:
+                _ibge_indisponivel = True
+                reserva = _municipios_base(uf)
+                if not reserva:
+                    raise
+                print(f"  ! IBGE indisponível ({exc}); usando lista de reserva (sem população).")
+                resultado.extend(reserva)
+                continue
 
-        muns_uf = _baixar_uf(uf, ids_uf)
-        _salvar_cache(arquivo, muns_uf)
-        resultado.extend(muns_uf)
+        reserva = _municipios_base(uf)
+        if not reserva:
+            raise RuntimeError(f"Sem dados de municípios para {uf}.")
+        resultado.extend(reserva)
 
     return resultado
 

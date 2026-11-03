@@ -152,6 +152,9 @@ def _selecionar_municipios(
     if min_pop > 0:
         muns = [m for m in muns if (m.populacao or 0) >= min_pop]
 
+    if args.ordem == "populacao" and not any(m.populacao for m in muns):
+        args.ordem = "distancia"  # sem população (lista de reserva), usa a distância
+
     if args.ordem == "distancia":
         muns.sort(key=lambda m: pontuacao.distancia_km(m.lat, m.lng))
     else:
