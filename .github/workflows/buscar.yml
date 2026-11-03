@@ -1,0 +1,97 @@
+name: Buscar leads
+
+on:
+  workflow_dispatch:
+    inputs:
+      uf:
+        description: "UFs separadas por espaço (ex.: CE RN) ou 'todos'"
+        default: "CE"
+      cidades:
+        description: "Opcional: cidades, ex.: Aquiraz/CE|Cascavel/CE (separe por |). Se preencher, ignora a UF."
+        default: ""
+      tipos:
+        description: "Opcional: tipos separados por | (ex.: Pousada/Hotel|Restaurante)"
+        default: ""
+      limite:
+        description: "Máximo de leads na lista"
+        default: "30"
+      max_municipios:
+        description: "Máximo de municípios varridos na rodada"
+        default: "10"
+  schedule:
+    # Todo dia às 08:00 de Fortaleza (11:00 UTC)
+    - cron: "0 11 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buscar-leads
+  cancel-in-progress: false
+
+jobs:
+  buscar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Código
+        uses: actions/checkout@v4
+
+      - name: Estado salvo (branch dados)
+        run: |
+          if git ls-remote --exit-code --heads origin dados >/dev/null 2>&1; then
+            git clone --depth 1 --branch dados "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" estado
+          else
+            mkdir -p estado
+            git -C estado init -q -b dados
+            git -C estado remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
+          fi
+          mkdir -p estado/dados estado/saida
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: python -m pip install -r requirements.txt
+
+      - name: Buscar leads
+        env:
+          UF: ${{ inputs.uf || 'CE' }}
+          CIDADES: ${{ inputs.cidades }}
+          TIPOS: ${{ inputs.tipos }}
+          LIMITE: ${{ inputs.limite || '30' }}
+          MAX_MUN: ${{ inputs.max_municipios || '10' }}
+        run: |
+          args=(buscar --dados estado/dados --saida estado/saida --limite "$LIMITE" --max-municipios "$MAX_MUN")
+          if [ -n "$CIDADES" ]; then
+            IFS='|' read -ra arr <<< "$CIDADES"
+            args+=(--cidade "${arr[@]}")
+          else
+            read -ra ufs <<< "$UF"
+            args+=(--uf "${ufs[@]}")
+          fi
+          if [ -n "$TIPOS" ]; then
+            IFS='|' read -ra tp <<< "$TIPOS"
+            args+=(--tipos "${tp[@]}")
+          fi
+          python buscar_leads.py "${args[@]}"
+
+      - name: Gerar lista para o celular
+        run: |
+          python scripts/lista_celular.py estado/saida estado/leads_celular.md
+          cat estado/leads_celular.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Salvar estado (evita repetir leads)
+        run: |
+          cd estado
+          git config user.name "prospector-bot"
+          git config user.email "prospector-bot@users.noreply.github.com"
+          git add -A -f
+          if git diff --cached --quiet; then
+            echo "Nada novo para salvar."
+          else
+            git commit -q -m "dados: rodada $(date -u +%Y-%m-%d_%H%M)"
+            git push -q origin dados
+          fi
