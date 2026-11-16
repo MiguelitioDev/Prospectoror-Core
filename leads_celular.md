@@ -1,26 +1,68 @@
-# Leads — 2026-11-15_181514
+# Leads — 2026-11-16_213721
 
 30 leads novos, do melhor para o pior.
 
 ---
 
-### 1. 🔥 Hotel e Lanche Davi
+### 1. 🔥 Avalanches
 
-Pousada/Hotel · Guaraciaba do Norte/CE · chance 74
+Restaurante · Juazeiro do Norte/CE · chance 76
 
 Site: Sem site
 
-Preparar: **Protótipo**
+Preparar: **Site final**
 
-Oferta R$ 2400 · alvo R$ 1700 · mín. R$ 1450
+Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[💬 WhatsApp](https://wa.me/5588993289748?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588993289748](tel:+5588993289748) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Hotel+e+Lanche+Davi+Guaraciaba+do+Norte+CE)
+[💬 WhatsApp](https://wa.me/5588981268200?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981268200](tel:+5588981268200) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Avalanches+Juazeiro+do+Norte+CE)
 
 ---
 
-### 2. 🔥 Crepe Arte
+### 2. 🔥 Toda Linda - Moda íntima e Fitness
 
-Restaurante · Fortaleza/CE · chance 71
+Loja de roupa · Viçosa do Ceará/CE · chance 76
+
+Site: Só rede social
+
+Preparar: **Site final**
+
+Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
+
+[💬 WhatsApp](https://wa.me/5588981338304?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981338304](tel:+5588981338304) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Toda+Linda+-+Moda+%C3%ADntima+e+Fitness+Vi%C3%A7osa+do+Cear%C3%A1+CE)
+
+---
+
+### 3. 🔥 POUSADA VASCONCELOS TIANGUÁ
+
+Pousada/Hotel · Tianguá/CE · chance 74
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 2100 · alvo R$ 1500 · mín. R$ 1300
+
+[💬 WhatsApp](https://wa.me/5588994492828?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588994492828](tel:+5588994492828) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=POUSADA+VASCONCELOS+TIANGU%C3%81+Tiangu%C3%A1+CE) · [🌐 Site atual](https://www.instagram.com/pousadavasconcelostiangua/)
+
+---
+
+### 4. 🔥 Chiquinha Turismo - viagens, excursões, passeio e bate e volta
+
+Agência/Passeio · Crato/CE · chance 72
+
+Site: Site fora do ar
+
+Preparar: **Protótipo**
+
+Oferta R$ 2150 · alvo R$ 1550 · mín. R$ 1300
+
+[💬 WhatsApp](https://wa.me/5588981552447?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981552447](tel:+5588981552447) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Chiquinha+Turismo+-+viagens%2C+excurs%C3%B5es%2C+passeio+e+bate+e+volta+Crato+CE) · [🌐 Site atual](https://chiquinhaturismo.agenciadeviagensls.com.br/)
+
+---
+
+### 5. 🔥 Restaurante Casa Malu
+
+Restaurante · Juazeiro do Norte/CE · chance 72
 
 Site: Só rede social
 
@@ -28,13 +70,27 @@ Preparar: **Protótipo**
 
 Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[💬 WhatsApp](https://wa.me/5585999747020?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585999747020](tel:+5585999747020) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Crepe+Arte+Fortaleza+CE)
+[💬 WhatsApp](https://wa.me/5588997054948?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997054948](tel:+5588997054948) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Restaurante+Casa+Malu+Juazeiro+do+Norte+CE)
 
 ---
 
-### 3. 🔥 Greenish
+### 6. 🔥 Sushicoacoara
 
-Loja de roupa · Fortaleza/CE · chance 71
+Restaurante · Jijoca de Jericoacoara/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
+
+[💬 WhatsApp](https://wa.me/5588981276358?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981276358](tel:+5588981276358) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Sushicoacoara+Jijoca+de+Jericoacoara+CE) · [🌐 Site atual](https://www.instagram.com/sushicoacoara/)
+
+---
+
+### 7. 🔥 Pizzaria Papa Léguas
+
+Restaurante · Pereiro/CE · chance 71
 
 Site: Sem site
 
@@ -42,13 +98,13 @@ Preparar: **Protótipo**
 
 Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[📞 +558533878100](tel:+558533878100) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Greenish+Fortaleza+CE)
+[💬 WhatsApp](https://wa.me/5588997525505?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997525505](tel:+5588997525505) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Pizzaria+Papa+L%C3%A9guas+Pereiro+CE)
 
 ---
 
-### 4. 🔥 Ponto da Moda
+### 8. 🔥 Sasuke sushi
 
-Loja de roupa · Fortaleza/CE · chance 71
+Restaurante · Pereiro/CE · chance 71
 
 Site: Sem site
 
@@ -56,13 +112,13 @@ Preparar: **Protótipo**
 
 Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[📞 +558532524689](tel:+558532524689) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Ponto+da+Moda+Fortaleza+CE)
+[💬 WhatsApp](https://wa.me/5588981593363?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981593363](tel:+5588981593363) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Sasuke+sushi+Pereiro+CE)
 
 ---
 
-### 5. 🔥 London
+### 9. 🔥 Sasuke sushi
 
-Loja de roupa · Fortaleza/CE · chance 71
+Restaurante · Pereiro/CE · chance 71
 
 Site: Sem site
 
@@ -70,13 +126,13 @@ Preparar: **Protótipo**
 
 Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[📞 +558532247695](tel:+558532247695) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=London+Fortaleza+CE)
+[💬 WhatsApp](https://wa.me/5588981593363?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981593363](tel:+5588981593363) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Sasuke+sushi+Pereiro+CE)
 
 ---
 
-### 6. 🔥 Assis O Rei da Picanha II
+### 10. 🔥 Pizzaria Papa Léguas
 
-Restaurante · Fortaleza/CE · chance 71
+Restaurante · Pereiro/CE · chance 71
 
 Site: Sem site
 
@@ -84,13 +140,13 @@ Preparar: **Protótipo**
 
 Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[📞 +558532673021](tel:+558532673021) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Assis+O+Rei+da+Picanha+II+Fortaleza+CE)
+[💬 WhatsApp](https://wa.me/5588997525505?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997525505](tel:+5588997525505) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Pizzaria+Papa+L%C3%A9guas+Pereiro+CE)
 
 ---
 
-### 7. 🔥 San Michel Messejana
+### 11. 🔥 Cabana do Porco
 
-Loja de roupa · Fortaleza/CE · chance 71
+Restaurante · Tianguá/CE · chance 71
 
 Site: Sem site
 
@@ -98,326 +154,270 @@ Preparar: **Protótipo**
 
 Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
 
-[📞 +558532501085](tel:+558532501085) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=San+Michel+Messejana+Fortaleza+CE)
+[💬 WhatsApp](https://wa.me/5588997972424?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997972424](tel:+5588997972424) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Cabana+do+Porco+Tiangu%C3%A1+CE)
 
 ---
 
-### 8. 🔥 Churrascaria Carneiro do Sertão
+### 12. 🔥 Ale Felix Patisserie
 
-Restaurante · Pentecoste/CE · chance 71
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585991432561?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585991432561](tel:+5585991432561) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Ale+Felix+Patisserie+Fortaleza+CE) · [🌐 Site atual](https://www.instagram.com/alefelixpatisserie)
+
+---
+
+### 13. 🔥 Cafofo Café com Plantas
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585997791258?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585997791258](tel:+5585997791258) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Cafofo+Caf%C3%A9+com+Plantas+Fortaleza+CE)
+
+---
+
+### 14. 🔥 Café de Praia
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585985922028?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585985922028](tel:+5585985922028) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+de+Praia+Fortaleza+CE)
+
+---
+
+### 15. 🔥 Atelier 1913
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585998361124?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585998361124](tel:+5585998361124) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Atelier+1913+Fortaleza+CE) · [🌐 Site atual](https://linktr.ee/atelier1913)
+
+---
+
+### 16. 🔥 Moto Libre Bar
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585997440299?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585997440299](tel:+5585997440299) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Moto+Libre+Bar+Fortaleza+CE)
+
+---
+
+### 17. 🔥 5 Elementos Pub
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585985055505?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585985055505](tel:+5585985055505) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=5+Elementos+Pub+Fortaleza+CE)
+
+---
+
+### 18. 🔥 Deixe Comigo Bar
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585998033996?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585998033996](tel:+5585998033996) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Deixe+Comigo+Bar+Fortaleza+CE)
+
+---
+
+### 19. 🔥 Vonet Patisserie e Cafeteria
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585986018028?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585986018028](tel:+5585986018028) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Vonet+Patisserie+e+Cafeteria+Fortaleza+CE)
+
+---
+
+### 20. 🔥 Budega do Raul
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585991127284?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585991127284](tel:+5585991127284) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Budega+do+Raul+Fortaleza+CE)
+
+---
+
+### 21. 🔥 Casa Nupê
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585981789598?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585981789598](tel:+5585981789598) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Casa+Nup%C3%AA+Fortaleza+CE) · [🌐 Site atual](https://linktr.ee/nupecafe_)
+
+---
+
+### 22. 🔥 Cup Coffee
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585992438892?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585992438892](tel:+5585992438892) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Cup+Coffee+Fortaleza+CE)
+
+---
+
+### 23. 🔥 De Vóisse Bar e Karaokê
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585997527050?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585997527050](tel:+5585997527050) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=De+V%C3%B3isse+Bar+e+Karaok%C3%AA+Fortaleza+CE)
+
+---
+
+### 24. 🔥 Café Comércio
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585991409353?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585991409353](tel:+5585991409353) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Caf%C3%A9+Com%C3%A9rcio+Fortaleza+CE)
+
+---
+
+### 25. 🔥 Quintal do Samba
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585996564884?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585996564884](tel:+5585996564884) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Quintal+do+Samba+Fortaleza+CE)
+
+---
+
+### 26. 🔥 Paladar
+
+Bar/Café · Fortaleza/CE · chance 71
 
 Site: Sem site
 
 Preparar: **Protótipo**
 
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
 
-[💬 WhatsApp](https://wa.me/5585991642328?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585991642328](tel:+5585991642328) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Churrascaria+Carneiro+do+Sert%C3%A3o+Pentecoste+CE)
+[📞 +558532577536](tel:+558532577536) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Paladar+Fortaleza+CE)
 
 ---
 
-### 9. 🔥 Lanche da Tapioca
+### 27. 🔥 Loft Cafe - Brunch Bar
 
-Restaurante · Aracati/CE · chance 71
+Bar/Café · Fortaleza/CE · chance 71
 
 Site: Sem site
 
 Preparar: **Protótipo**
 
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
 
-[💬 WhatsApp](https://wa.me/5588992907034?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588992907034](tel:+5588992907034) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Lanche+da+Tapioca+Aracati+CE)
+[📞 +558530310351](tel:+558530310351) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Loft+Cafe+-+Brunch+Bar+Fortaleza+CE)
 
 ---
 
-### 10. 🔥 Game Of Burgers Oficial🤴🏻🍔
+### 28. 🔥 Vila Camaleão
 
-Restaurante · Aracati/CE · chance 71
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Só rede social
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585991777033?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585991777033](tel:+5585991777033) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Vila+Camale%C3%A3o+Fortaleza+CE)
+
+---
+
+### 29. 🔥 Bleecker Café
+
+Bar/Café · Fortaleza/CE · chance 71
+
+Site: Não confirmado
+
+Preparar: **Protótipo**
+
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
+
+[💬 WhatsApp](https://wa.me/5585987241312?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585987241312](tel:+5585987241312) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Bleecker+Caf%C3%A9+Fortaleza+CE) · [🌐 Site atual](https://bleecker-cafe-aldeota.negocio.site/)
+
+---
+
+### 30. 🔥 Espetu's Beer
+
+Bar/Café · Limoeiro do Norte/CE · chance 71
 
 Site: Sem site
 
 Preparar: **Protótipo**
 
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
+Oferta R$ 1250 · alvo R$ 900 · mín. R$ 800
 
-[💬 WhatsApp](https://wa.me/5585999647955?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585999647955](tel:+5585999647955) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Game+Of+Burgers+Oficial%F0%9F%A4%B4%F0%9F%8F%BB%F0%9F%8D%94+Aracati+CE)
-
----
-
-### 11. 🔥 Ki Pizza Delivery
-
-Restaurante · Russas/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588994898145?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588994898145](tel:+5588994898145) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Ki+Pizza+Delivery+Russas+CE)
-
----
-
-### 12. 🔥 Skina Mix -Flores-Russas-Ce
-
-Restaurante · Russas/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588997814283?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997814283](tel:+5588997814283) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Skina+Mix+-Flores-Russas-Ce+Russas+CE)
-
----
-
-### 13. 🔥 House Burger
-
-Restaurante · Russas/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588981971265?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981971265](tel:+5588981971265) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=House+Burger+Russas+CE)
-
----
-
-### 14. 🔥 Churrascaria Golfinho
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588999580489?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588999580489](tel:+5588999580489) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Churrascaria+Golfinho+Jaguaruana+CE)
-
----
-
-### 15. 🔥 Pizzaria chico cell
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588992975394?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588992975394](tel:+5588992975394) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Pizzaria+chico+cell+Jaguaruana+CE)
-
----
-
-### 16. 🔥 Churrascaria o tiquinho
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588993226419?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588993226419](tel:+5588993226419) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Churrascaria+o+tiquinho+Jaguaruana+CE)
-
----
-
-### 17. 🔥 Churrascaria beco
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588992758163?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588992758163](tel:+5588992758163) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Churrascaria+beco+Jaguaruana+CE)
-
----
-
-### 18. 🔥 Sol burguer
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5511972216130?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5511972216130](tel:+5511972216130) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Sol+burguer+Jaguaruana+CE)
-
----
-
-### 19. 🔥 Pizzaria Fornalha
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588998632549?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588998632549](tel:+5588998632549) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Pizzaria+Fornalha+Jaguaruana+CE)
-
----
-
-### 20. 🔥 Loucos por Pizza
-
-Restaurante · Jaguaruana/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588994532340?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588994532340](tel:+5588994532340) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Loucos+por+Pizza+Jaguaruana+CE)
-
----
-
-### 21. 🔥 UMAMI RESTAURANT
-
-Restaurante · Amontada/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5585999229672?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5585999229672](tel:+5585999229672) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=UMAMI+RESTAURANT+Amontada+CE)
-
----
-
-### 22. 🔥 R&R Serviços de preparo de alimentos
-
-Restaurante · Limoeiro do Norte/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588992407430?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588992407430](tel:+5588992407430) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=R%26R+Servi%C3%A7os+de+preparo+de+alimentos+Limoeiro+do+Norte+CE)
-
----
-
-### 23. 🔥 Restaurante e Marmitaria Prato Cheio
-
-Restaurante · Limoeiro do Norte/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588996663879?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588996663879](tel:+5588996663879) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Restaurante+e+Marmitaria+Prato+Cheio+Limoeiro+do+Norte+CE)
-
----
-
-### 24. 🔥 Sítio do Churrasco
-
-Restaurante · Limoeiro do Norte/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588998039800?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588998039800](tel:+5588998039800) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=S%C3%ADtio+do+Churrasco+Limoeiro+do+Norte+CE)
-
----
-
-### 25. 🔥 Pizzaria DuMouras
-
-Restaurante · Limoeiro do Norte/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588997526848?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997526848](tel:+5588997526848) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Pizzaria+DuMouras+Limoeiro+do+Norte+CE)
-
----
-
-### 26. 🔥 Ponto do Cupim
-
-Restaurante · Icapuí/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588992111977?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588992111977](tel:+5588992111977) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Ponto+do+Cupim+Icapu%C3%AD+CE)
-
----
-
-### 27. 🔥 Restaurante Panela de Barro
-
-Restaurante · Tabuleiro do Norte/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588996456842?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588996456842](tel:+5588996456842) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Restaurante+Panela+de+Barro+Tabuleiro+do+Norte+CE)
-
----
-
-### 28. 🔥 Boutique fashion
-
-Loja de roupa · Tabuleiro do Norte/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588981237104?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588981237104](tel:+5588981237104) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Boutique+fashion+Tabuleiro+do+Norte+CE)
-
----
-
-### 29. 🔥 Pizzaria Top
-
-Restaurante · Quixeré/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588997116818?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588997116818](tel:+5588997116818) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Pizzaria+Top+Quixer%C3%A9+CE)
-
----
-
-### 30. 🔥 Churrascaria São Paulo
-
-Restaurante · Quixeré/CE · chance 71
-
-Site: Sem site
-
-Preparar: **Protótipo**
-
-Oferta R$ 1400 · alvo R$ 1000 · mín. R$ 850
-
-[💬 WhatsApp](https://wa.me/5588992370537?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588992370537](tel:+5588992370537) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Churrascaria+S%C3%A3o+Paulo+Quixer%C3%A9+CE)
+[💬 WhatsApp](https://wa.me/5588994189573?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Sou%20o%20Miguel%2C%20da%20MJ%20Studios.%20Fa%C3%A7o%20sites%20profissionais%20para%20neg%C3%B3cios%2C%20com%20contato%20direto%20pelo%20WhatsApp%2C%20para%20ajudar%20a%20receber%20mais%20clientes.%20Aqui%20est%C3%A3o%20alguns%20sites%20que%20j%C3%A1%20fiz%2C%20e%20no%20pr%C3%B3prio%20site%20voc%C3%AA%20j%C3%A1%20pode%20montar%20o%20seu%20or%C3%A7amento%3A%20https%3A%2F%2Fmj-studio-sandy.vercel.app%2F%20Posso%20te%20ajudar%20com%20isso%3F) · [📞 +5588994189573](tel:+5588994189573) · [📍 Maps](https://www.google.com/maps/search/?api=1&query=Espetu%27s+Beer+Limoeiro+do+Norte+CE)
